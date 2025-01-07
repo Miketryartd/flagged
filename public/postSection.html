@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js" type="emodule"></script>
+
+    <link rel="stylesheet" href="post.css">
+    <title>Upload</title>
+</head>
+<body>
+
+
+    <div class="navTop">
+        <h1><img src="images/logo.png"></h1>
+     
+        <ul>
+        
+            <li><a href="teacherpanel.html">Home<i class='bx bxs-home' ></i></a></li>
+            <li><button id="classList">View Classes</button></li>
+            <li><button>Messages<i class='bx bxs-message-rounded-dots' ></i></button></li>
+            <li><button id="menu"><i class='bx bxs-user-circle' ></i></button></li>
+           
+         
+            
+        </ul>
+        
+    </div>
+
+    <div class="postParent">
+        <div class="postBox">
+            <ul>
+                <li><h1>Create post<i class='bx bxs-edit' ></i></h1></li>
+                <li>
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" placeholder="Subject">
+                </li>
+                
+             
+                <li>
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Message"></textarea>
+                </li>
+               
+
+                <li>
+                    <label for="file">Upload File(optional)</label>
+                    <input id="file" type="file">
+                </li>
+                <li>
+
+                    
+                    <button id="upload">Upload</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+   
+    <div class="menuParent" id="menuDown">
+
+        <div class="menuDown">
+        
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><button id="logout">Logout</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+    <script src="post.js" type="module"></script>
+</body>
+</html>

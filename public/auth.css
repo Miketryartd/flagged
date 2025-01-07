@@ -1,0 +1,389 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(83, 83, 131);
+    border-radius: 5px;
+}
+
+:root{
+    --realColor: rgb(7, 60, 135);
+    --bgColor:  rgb(4, 11, 48);
+    --footerColor: rgb(6, 35, 114);
+    
+}
+body{
+background: linear-gradient(to right, var(--bgColor), rgb(6, 29, 83));
+ 
+}
+.navTop img{
+    padding: 5px;
+    height: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.211);
+    border-radius: 25px;
+    background-color: white;
+}
+.navTop{
+    position: sticky;
+    transition: 0.2s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.048);
+    }
+     
+    .navTop ul li{
+        padding: 5px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .navTop ul li a{
+        font-weight:600;
+        color: rgb(56, 56, 56);
+    }
+    .navTop ul li i{
+        color: var(--realColor);
+    }
+    
+    .navTop h1{
+        margin: 15px;
+        color: rgb(60, 70, 176);
+       
+    }
+    .sticky  h1{
+        box-shadow: 0px 5px 0px rgba(255, 255, 255, 0.729);
+    }
+    .navTop ul li a{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .navTop ul li a button{
+        border: none;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1rem;
+        background-color: var(--realColor);
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .navTop ul li button i{
+        color: white;
+    }
+
+
+
+    .regParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top:15px;
+
+    }
+    .regParent .regSectionBlock{
+        width: 800px;
+  
+
+        background-color: rgba(242, 242, 242, 0.535);
+  
+  
+        margin: 15px;
+        border-radius: 15px;
+    }
+    .regSectionBlock .regForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.189);
+        background-color: white;
+       
+    }
+    .regForm ul li{
+        list-style: none;
+        width: 100%;
+        padding: 10px;
+  
+      
+    }
+    .regForm ul{
+        width: 100%;
+        border-left: 1px solid rgba(0, 0, 0, 0.226);
+    }
+    .regForm ul li input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.226);
+        outline: none;
+    }
+    .regForm ul li input::placeholder{
+        color: rgb(186, 186, 186);
+    }
+    .regForm ul li h2{
+        color: rgb(60, 60, 60);
+        font-weight: 100;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+    }
+    .regForm ul li #signup{
+        width: 100%;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        font-weight: 900;
+        font-size: 1.2rem;
+        color: white;
+        background-color:var(--realColor);
+    }
+    
+    .regForm ul li h1{
+        color: var(--realColor);
+        font-weight: 900;
+       
+    }
+    .regForm ul li #male, #female{
+       border: 1px solid rgba(0, 0, 0, 0.448);
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: white;
+        
+    }
+    .regForm ul li #male i {
+        color: rgb(36, 117, 246);
+    }
+    .regForm ul li #female i{
+        color: rgb(241, 50, 82);
+    }
+    
+    .regForm ul img{
+        height: 50px;
+    }
+
+    #line{
+        text-decoration: underline;
+        width: 100%;
+        color: rgb(0, 0, 0);
+    }
+    .mfb{
+        border-top:1px solid rgba(0, 0, 0, 0.27);
+    }
+
+    .title{
+        border:1px solid rgba(0, 0, 0, 0.135);
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: self-start;
+        background-color:var(--footerColor);
+      position: fixed;
+       bottom: 0;
+       height: 70px;
+    }
+    footer img{
+        height:50px;
+        margin:-10px;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.325);
+        border-radius: 25px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.274);
+    }
+    footer ul li{
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    footer ul li a{
+        color: white;
+    }
+footer ul li h1{
+    margin: 15px;
+    color: rgb(103, 113, 223);
+   
+}
+footer ul li h5{
+    color: rgb(193, 193, 193);
+}
+
+
+    .imgbox{
+        background-color: var(--realColor);
+        height: 700px;
+        
+    }
+   
+
+   
+
+    .imgbox ul li{
+        list-style: none;
+        margin:5px;
+    
+
+    }
+    .imgbox ul li h1{
+        color: white;
+  
+        border-bottom: 5px solid rgb(228, 225, 25);
+    }
+    .imgbox ul li h2{
+        
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .tb{
+        margin: 10px;
+    }
+
+   
+
+    .overlayParent{
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .overlayParent .overlay{
+height: 1000px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 730px;
+        background-color: rgba(0, 0, 0, 0.253);
+        position: fixed;
+    }
+
+    .overlay ul li{
+        list-style: none;
+      
+    }
+    .overlay ul{
+        background-color: white;
+        height: 200px;
+    }
+    .overlay ul li h1{
+        color: rgb(41, 41, 41);
+        margin: 10px;
+        font-size: 1.3rem;
+    }
+    .overlay ul li h5{
+        width: 100%;
+        color: rgb(104, 104, 104);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    }
+
+    .overlay ul li img{
+        height: 100px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.212);
+        border-radius: 50%;
+        margin-top: 10px;
+        animation: anime infinite 2s ease-in-out;
+    }
+
+
+
+    @keyframes anime{
+        0%{
+            transform:rotate(0deg);
+        }
+        50%{
+            transform: rotate(130deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .overlayParentt{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        visibility: hidden;
+    }
+    .overlayParentt .overlayy{
+height: 1000px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 730px;
+        background-color: rgba(0, 0, 0, 0.253);
+        position: fixed;
+    }
+
+    .overlayy ul li{
+        list-style: none;
+      
+    }
+    .overlayy ul{
+        background-color: white;
+        height: 200px;
+    }
+    .overlayy ul li h1{
+        color: rgb(41, 41, 41);
+        margin: 10px;
+    }
+    .overlayy ul li h5{
+        width: 100%;
+        color: rgb(104, 104, 104);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    }
+
+    .overlayy ul li img{
+        height: 90px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.212);
+        border-radius: 50%;
+        margin-top: 10px;
+       
+    }
+
+
+    .overlayy ul li button{
+        position: relative;
+        left:170px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    label {
+        border: 1px solid rgba(0, 0, 0, 0.226); 
+        padding: 5px; 
+        display: inline-block; 
+        margin: 5px;
+      }
+      
+      input[type="checkbox"] {
+        margin-left: 5px; 
+      }
+      

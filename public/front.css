@@ -1,0 +1,686 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(83, 83, 131);
+    border-radius: 5px;
+}
+
+:root{
+    --realColor: rgb(7, 60, 135);
+    --bgColor:  rgb(4, 11, 48);
+    --footerColor: rgb(6, 35, 114);
+    
+}
+body{
+    background: linear-gradient(to right, var(--bgColor), rgb(6, 29, 83));
+   
+}
+.navTop img{
+    height: 50px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.211);
+    border-radius: 25px;
+}
+.navTop{
+    position: fixed;
+    top:0px;
+    transition: 0.2s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.048);
+    }
+    
+    .navTop ul li{
+        padding: 5px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .navTop ul li a{
+        font-weight:600;
+        color: rgb(56, 56, 56);
+    }
+    .navTop ul li i{
+        color: var(--realColor);
+    }
+    
+    .navTop h1{
+        margin: 15px;
+        color: rgb(60, 70, 176);
+      
+    }
+    
+    .navTop ul li a{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .navTop ul li a button{
+        border: none;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1rem;
+        background-color: var(--realColor);
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .navTop  i{
+        color: rgb(163, 5, 5);
+    }
+
+
+
+    .parentContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .parentContainer .mainContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:15px;
+        width: 1250px;
+        background: 
+        linear-gradient( rgb(74, 123, 231), rgba(12, 24, 74, 0.675) ),
+        url(images/4.jpg);
+    
+     background-position:center;
+     background-size: cover;
+    
+      
+    }
+    .mainContainer ul li{
+        list-style: none;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      
+    }
+    .mainContainer ul li h1{
+        color: yellow;
+        font-weight: 900;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .mainContainer ul li h2{
+        color: rgb(249, 249, 98);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 900;
+        padding: 10px;
+    }
+    .mainContainer ul li img{
+       height: auto;
+       width: 10%;
+    }
+   
+
+
+    .imgParent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: -30px;
+    }
+    .imgParent .imgContainer{
+        width: 1250px;
+        text-align: center;
+        margin: 15px;
+      background:  linear-gradient( rgb(74, 123, 231), rgba(12, 24, 74, 0.675) ),
+      url(images/bg.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+
+    .imgContainer button{
+        height: 100px;
+        border: none;
+        width: 35px;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.489);
+        color: white;
+        
+    }
+    .imgContainer button:hover{
+        transition: 0.2s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.761);
+    }
+    .imgContainer img{
+       height: auto;
+       margin: 5px;
+        width:70%;
+        height:600px;
+        object-fit: cover;
+    }
+
+    .pickParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    .pickParent .pickContainer{
+        background-color: rgba(255, 0, 0, 0.068);
+        width: 1250px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .pickContainer ul li{
+        list-style: none;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+   
+    .pickContainer ul li img{
+        height: 35px;
+
+
+    }
+    .pickContainer ul li p{
+        color: white;
+    }
+    .pickContainer ul li a{
+        color: rgb(251, 255, 0);
+    }
+    .pickContainer ul li button{
+        border: none;
+        width: 350px;
+        color: rgb(0, 0, 0);
+        border-radius: 3px;
+        font-size: 1.4rem;
+        font-weight: 900;
+        outline:1px solid rgb(129, 211, 255);
+        background-color:rgb(45, 147, 243);
+        padding: 15px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .pickContainer ul li button:hover{
+        transition: 0.2s ease-in-out;
+       background-color: yellow;
+    }
+   
+
+    .historyParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .historyParent .historyContainer{
+        width: 1250px;
+        color: white;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        background-color: rgb(19, 49, 86);
+    }
+    .historyContainer ul li{
+        list-style: none;
+    }
+    .historyContainer ul li h1{
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        background-color: rgba(19, 107, 162, 0.189);
+        font-size: 3rem;
+        padding: 20px;
+        margin-bottom: 15px;
+        color: yellow;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.038);
+
+    }
+    .historyContainer ul li h3{
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .visionParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .visionParent .visionContainer{
+        width: 1250px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        text-align: end;
+        background-color: rgb(23, 64, 115);
+        margin: 15px;
+    }
+    .visionContainer ul li{
+        list-style: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.293);
+        padding: 15px;
+    }
+    .visionContainer ul li h1{
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        background-color: rgba(19, 107, 162, 0.189);
+        font-size: 3rem;
+        padding: 20px;
+        margin-bottom: 15px;
+        color: yellow;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.038);
+    }
+    .visionContainer ul li h3{
+        color: white;
+    }
+
+    .missionParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .missionParent .missionContainer{
+        width: 1250px;
+        background-color: rgb(23, 64, 115);
+        margin: 15px;
+        display: flex;
+    }
+    .missionContainer ul li{
+        list-style: none;
+        padding: 15px;
+        border-left: 1px solid rgba(255, 255, 255, 0.293);
+    }
+    .missionContainer ul li h1{
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        background-color: rgba(19, 107, 162, 0.189);
+        font-size: 3rem;
+        padding: 20px;
+        margin-bottom: 15px;
+        color: yellow;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.038);
+    }
+    .missionContainer ul li h3{
+        color: white;
+    }
+    .missionContainer ul li h4{
+        color: rgba(255, 255, 0, 0.836);
+    }
+
+
+    .philoParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .philoParent .philoContainer{
+        width: 1250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(23, 64, 115);
+        margin: 15px;
+    }
+    .philoContainer ul li{
+        list-style: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.293);
+        padding: 15px;
+    }
+    .philoContainer ul li h1{
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        background-color: rgba(19, 107, 162, 0.189);
+        font-size: 3rem;
+        padding: 20px;
+        margin-bottom: 15px;
+        color: yellow;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.038);
+    }
+    .philoContainer ul li h3{
+        color: white;
+    }
+
+    
+    .hymParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .hymParent .hymContainer{
+        width: 1250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(23, 64, 115);
+        margin: 15px;
+    }
+    .hymContainer ul li{
+        list-style: none;
+    
+        padding: 15px;
+    }
+    .hymContainer ul li h1{
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        background-color: rgba(19, 107, 162, 0.189);
+        font-size: 3rem;
+        padding: 20px;
+        margin-bottom: 15px;
+        color: yellow;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.038);
+    }
+    .hymContainer ul li h3{
+        color: white;
+    }
+
+    .problemParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .problemParent .problemContainer{
+        margin:15px;
+        width: 1250px;
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+
+    
+    .problemContainer ul{
+        width: 100%;
+        
+      
+        background:linear-gradient(rgba(0, 123, 255, 0.304), rgba(225, 225, 225, 0.047));
+        margin: 15px;
+    }
+    .problemContainer ul li h2{
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        border-bottom: 1px solid white;
+    }
+    .problemContainer ul li{
+        list-style: none;
+        padding: 2px;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+       
+    }
+    .problemContainer ul li input{
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border-radius: 5px;
+        
+        border: 1px solid rgb(39, 39, 39);
+    }
+    .problemContainer ul li h1{
+        color: rgb(255, 255, 255);
+    }
+    .problemContainer ul li h2{
+        color: yellow;
+    }
+    .problemContainer ul li textarea{
+        resize: none;
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(18, 144, 255);
+        border-radius: 5px;
+        height: 300px;
+    }
+    .problemContainer ul li input::placeholder{
+        color: rgb(203, 203, 203);
+    }
+
+    .problemContainer ul li button{
+        border: none;
+       transition: 0.2s ease-in;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(62, 46, 242);
+        color: white;
+    }
+    .problemContainer ul li button:hover{
+        transition: 0.2s ease-in;
+        background-color: rgb(2, 148, 253);
+    }
+    
+    .problemContainer .imgBox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        background:linear-gradient(rgba(0, 123, 255, 0.304), rgba(225, 225, 225, 0.047));
+        height: 700px;
+    }
+
+    .imgBox img{
+        height: auto;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.982);
+        border-radius: 50%;
+        padding: 15px;
+        margin:-20px;
+        margin-top: -300px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.129);
+        border:10px solid rgba(7, 48, 150, 0.712);
+       
+    }
+
+  
+    .overlayParent{
+        transition: 0.2s ease-in;
+        display: flex;
+        visibility: hidden;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top:0px;
+        width: 100%;
+        height: 1000px;
+        z-index:100;
+        background-color: rgba(0, 0, 0, 0.358);
+    }
+    .overlayParent .overlayEmail{
+        transition: 0.2s ease-in-out;
+        background-color: rgb(250, 250, 255);
+        display: flex;
+       text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    .overlayEmail ul{
+        width: 100%;
+    }
+
+    .overlayEmail ul li{
+        list-style: none;
+        width: 100%;
+    }
+
+    .overlayEmail ul li button{
+        border: none;
+        position: relative;
+        left:135px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .overlayEmail ul li h3{
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.066);
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        color: rgb(43, 43, 43);
+    }
+    
+
+    .overlayEmail ul li p{
+        color: grey;
+        margin:15px;
+        position: relative;
+        top:-50px;
+        padding: 10px;
+    }
+
+    .overlayEmail ul li img{
+        height: 60px;
+        background-color: white;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.136);
+        border-radius: 50px;
+    }
+
+    .overlayParent1{
+        transition: 0.2s ease-in;
+        display: flex;
+    visibility: hidden;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top:0px;
+        width: 100%;
+        height: 1000px;
+        z-index:100;
+        background-color: rgba(0, 0, 0, 0.358);
+    }
+    .overlayParent1 .overlayEmail1{
+        transition: 0.2s ease-in-out;
+        background-color: white;
+        display: flex;
+       text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    .overlayEmail1 ul{
+        width: 100%;
+    }
+
+    .overlayEmail1 ul li{
+        list-style: none;
+        width: 100%;
+    }
+
+    .overlayEmail1 ul li img{
+        height: 150px;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.136);
+        border-radius: 50%;
+        animation: rotate infinite 2s ease-in-out;
+    }
+
+
+    .overlayEmail1 ul li h3{
+        color: grey;
+    }
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+            
+        }
+    
+        50%{
+            transform: rotate(130deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+  
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: self-start;
+        background-color:var(--footerColor);
+     
+       bottom: 0;
+       height: 115px;
+    }
+    
+    footer img{
+        height:50px;
+        padding: 5px;
+       
+        background-color: rgb(255, 255, 255);
+        border-radius: 25px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.274);
+    }
+    footer ul li{
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    footer ul li a{
+        color: white;
+    }
+footer ul li h1{
+    margin: 15px;
+    color: rgb(103, 113, 223);
+   
+}
+footer ul li h5{
+    color: rgb(193, 193, 193);
+}
+
+    #emailicon{
+        font-size: 17rem;
+        color: rgba(128, 128, 128, 0.597);
+        border-radius: 25px;
+   
+    }
+    #check{
+        position: relative;
+        color: rgb(196, 4, 4);
+        top:-100px;
+       left:100px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 25px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.068);
+        font-size: 4rem;
+    }
