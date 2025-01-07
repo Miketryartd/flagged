@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <title>Flagged</title>
+</head>
+<body>
+    <div class="overlayParent" id="overlay">
+        <div class="logoutOverlay">
+            <ul>
+                <li><h1>Loging out...</h1></li>
+                <li><img src="images/logo.png"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="navTop">
+        <h1><img src="images/logo.png"></h1>
+     
+        <ul>
+        
+            <li><a href="picker.html">Home<i class='bx bxs-home' ></i></a></li>
+            <li>   <input id="searchBar" type="text" placeholder="Search..."><button id="searchBtn"><i class='bx bx-search' ></i></button></li>
+            <li><button id="classList">View Classes</button></li>
+            <li><button>Messages<i class='bx bxs-message-rounded-dots' ></i></button></li>
+            <li><button><a href="postSection.html"><i class='bx bxs-plus-circle' ></i></a></button></li>
+            <li><button id="menu"><i class='bx bxs-user-circle' ></i></button></li>
+           
+         
+            
+        </ul>
+        
+    </div>
+   
+
+    
+    
+    <div class="mediaParent">
+        <div class="mediaBox">
+            <h1>Announcements<i class='bx bxs-megaphone'></i></h1>
+            <ul id="posts"></ul>
+        </div>
+    </div>
+
+    
+    
+    <div class="menuParent" id="menuDown">
+
+        <div class="menuDown">
+        
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><button id="logout">Logout</button></li>
+            </ul>
+        </div>
+    </div>
+    
+   
+
+    <script src="home.js" type="module"></script>
+</body>
+</html>

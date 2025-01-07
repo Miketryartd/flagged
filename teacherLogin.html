@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js" type="emodule"></script>
+
+    <link rel="stylesheet" href="teacherpanellogin.css">
+</head>
+<body>
+<!--top navigation-->
+    <div class="navTop" id="navigation">
+        <h1 style="color:rgb(169, 7, 7);"><img src="images/logo.png"></h1>
+        
+        <ul>
+        
+            <li><a href="picker.html">Home<i class='bx bxs-home' ></i></a></li>
+            <li><a href="login.html"><button>Login</button></a></li>
+        </ul>
+    </div>
+    
+<!--end of top navigation -->
+
+
+
+
+
+
+<!--overlay-->
+<div class="overlayParent" id="overlay">
+    <div class="overlay">
+        <ul>
+            <li><h1>Please check your email for verification</h1></li>
+            <li><h5>This may take a minute...</h5></li>
+            <li><img src="images/logo.png"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="overlayParentt" id="overlayy">
+    <div class="overlayy">
+        <ul>
+            <li><button id="escape">X</button></li>
+            <li><h1>Registration successful!</h1></li>
+            <li><h5>You may now login.</h5></li>
+            <li><img src="images/logo.png"><img src="images/295099346_517743656818583_8296593718447410973_n-removebg-preview.png"></li>
+        </ul>
+    </div>
+</div>
+
+<!--overlayend-->
+    <!--registration form part-->
+
+
+    
+    <div class="regParent">
+       
+<div class="regSectionBlock">
+    
+    <div class="regForm">
+     
+           <div class="imgbox">
+            <img src="images/295099346_517743656818583_8296593718447410973_n-removebg-preview.png">
+            <ul>
+                <li><h1>CHILDREN OF FATIMA SCHOOL INC.</h1></li>
+                <li><h2>"We don't just school our learners, we educate them. Fatimanians apply VALUES"</h2></li>
+            </ul>
+           </div>
+
+      
+        <ul>
+            <div class="title">
+            <li><h1>Teacher Registration<i class='bx bxs-key' style="color: red;" ></i></h1></li>
+        </div>
+
+          
+                <li><h2>Email Address<i class='bx bxs-envelope' ></i></h1><input id="email" type="email" placeholder="Example18@gmail.com"></li>
+            
+                <li><h2>Password<i class='bx bx-key' ></i></h1><input id="password" type="password" placeholder="******"></li>
+                    <li><h2>Code</h2><input type="text" placeholder="Enter 6-Digit-Code" id="code"></li>
+                  
+                    <div class="mfb">
+    
+
+
+     
+               <li> <button id="login" >Login</button></li>
+               
+               
+        </ul>
+    </div>
+</div>
+</div>
+   
+
+
+<script src="login.js" type="module" ></script>
+    
+</body>
+</html>
